@@ -10,10 +10,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringJenkinsApplicationTests {
 	
-	//public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
+	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
 
 	@Test
-	 contextLoads() {
+	void contextLoads() {
 		logger.info("Test case execution...");
 		logger.info("Test case execution second log statement...");
 		assertEquals(true, true);
